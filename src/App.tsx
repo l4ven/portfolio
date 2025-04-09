@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Profile from "./components/Profile";
 import Introduce from "./components/Introduce";
 import Skill from "./components/Skill";

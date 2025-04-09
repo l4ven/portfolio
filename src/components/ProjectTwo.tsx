@@ -1,6 +1,6 @@
 import styles from "./styles/section.module.scss";
-import Goto from "../assets/image/Goto.svg";
-import Link from "../assets/image/Link.svg";
+// import Goto from "../assets/image/Goto.svg";
+// import Link from "../assets/image/Link.svg";
 import img1 from "../assets/pjtwo/img1.webp";
 import img2 from "../assets/pjtwo/img2.webp";
 import img3 from "../assets/pjtwo/img3.webp";
@@ -130,7 +130,7 @@ const ProjectOne = () => {
                   loading="lazy"
                   onMouseDown={handleMouseDown}
                   onMouseMove={handleMouseMove}
-                  onMouseUp={(e) => {
+                  onMouseUp={() => {
                     handleMouseUp();
                     if (!isDragging) openModal(i);
                   }}
