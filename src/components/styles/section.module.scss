@@ -1,0 +1,228 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+ul {
+  li {
+    margin-left: 12px;
+    width: 100%;
+    &::marker {
+      font-size: 10px;
+    }
+  }
+}
+
+.left {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.right {
+  flex: 1;
+}
+
+.scroll {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: 16px;
+}
+
+.album {
+  position: absolute;
+  inset: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  img {
+    height: 90px;
+    width: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    -webkit-user-drag: none;
+  }
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 100%;
+    background-color: var(--text-sub);
+    border-radius: 10px;
+    background-clip: padding-box;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--border);
+    border-radius: 10px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.pjtitle {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+.link {
+  width: max-content;
+  margin: 4px 0;
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  &:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.modalOverlay.exit {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+.modalContent {
+  animation: scaleUp 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  padding: 24px;
+}
+
+.modalContent.exit {
+  animation: scaleDown 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.closeBtn {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.imageCounter {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: 14px;
+  color: var(--text-sub);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 16px;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.contact {
+  a {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    width: 80px;
+  }
+  .row {
+    gap: 4px;
+  }
+}
