@@ -51,6 +51,8 @@
   --border: #ccc;
   --modal: rgba(50, 50, 50, 0.3);
   --link: #eee;
+  --gold: #cb912f;
+  --bronze: #9f6b53;
 }
 body.dark {
   --background: #121212;
@@ -59,6 +61,8 @@ body.dark {
   --border: #444;
   --modal: rgba(0, 0, 0, 0.6);
   --link: #222;
+  --gold: #ca984d;
+  --bronze: #ba856f;
 }
 
 body.dark img.theme-invert {

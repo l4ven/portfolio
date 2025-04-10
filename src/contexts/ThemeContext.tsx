@@ -22,6 +22,18 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "l") {
+        e.preventDefault();
+        toggleTheme();
+      }
+    };
+
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}

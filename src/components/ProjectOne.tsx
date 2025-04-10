@@ -85,7 +85,7 @@ const ProjectOne = () => {
             <a href="https://ojc-project.vercel.app/" target="_blank">
               <h2>오점추</h2>
             </a>
-            <img src={Goto} alt="" loading="lazy" />
+            <img src={Goto} alt="" loading="lazy" className="theme-invert" />
           </div>
           <h4>위치 기반 메뉴 추천 및 전 세계 음식 레시피 검색 서비스</h4>
           <ul>

@@ -1,8 +1,9 @@
+import React from "react";
 import styles from "./styles/section.module.scss";
 
 type AwardsProps = {
   date: string;
-  title: string;
+  title: React.ReactNode;
 };
 
 export const Awards = ({ date, title }: AwardsProps) => {
@@ -19,24 +20,112 @@ export const Awards = ({ date, title }: AwardsProps) => {
 };
 
 const awardList = [
-  { date: "2023.05.12.", title: "교내 아이디어 뱅크 참가" },
-  { date: "2023.06.19.", title: "경소고 프로그래밍 챌린지 본선 금상 🥇" },
-  { date: "2023.06.23.", title: "Microsoft 해커그라운드 해커톤 참가" },
-  { date: "2023.10.19.", title: "넥슨 NYPC 참가" },
-  { date: "2023.10.28.", title: "DASH 스타트업 채용박람회 기업 현장견학" },
+  { date: "2023.05.12.", title: <>교내 아이디어 뱅크 참가</> },
+  {
+    date: "2023.06.19.",
+    title: (
+      <>
+        경소고 프로그래밍 챌린지 본선{" "}
+        <span style={{ color: "var(--gold)", fontWeight: "600" }}>금상</span> 🥇
+      </>
+    ),
+  },
+  { date: "2023.06.23.", title: <>Microsoft 해커그라운드 해커톤 참가</> },
+  { date: "2023.10.19.", title: <>넥슨 NYPC 참가</> },
+  { date: "2023.10.28.", title: <>DASH 스타트업 채용박람회 기업 현장견학</> },
   {
     date: "2023.11.16.",
-    title: "제5회 SW-AI교육 창의융합 해커톤 대회 창의융합상(대상) 🥇",
+    title: (
+      <>
+        제5회 SW-AI교육 창의융합 해커톤 대회{" "}
+        <span style={{ color: "var(--gold)", fontWeight: "600" }}>
+          창의융합상(대상)
+        </span>{" "}
+        🥇
+      </>
+    ),
   },
-  { date: "2023.11.25.", title: "제5회 경북SWgo 해커톤 최우수상 🥈" },
-  { date: "2024.04.17.", title: "정보처리기능사 취득" },
-  { date: "2024.06.03.", title: "2024학년도 SWgo 프로그래밍 챌린지 동상 🥉" },
-  { date: "2023.06.19.", title: "경소고 프로그래밍 챌린지 본선 금상 🥇" },
-  { date: "2024.07.15.", title: "교내 창업 아이디어 대회 금상 🥇" },
-  { date: "2024.07.18.", title: "2024학년도 1학기 캡스톤 프로젝트 4등" },
-  { date: "2024.08.27.", title: "Microsoft 해커그라운드 해커톤 장려상 🥉" },
-  { date: "2024.11.25.", title: "2024학년도 2학기 학업성취도향상 장학금 수여" },
-  { date: "2024.12.24.", title: "정보처리산업기사 취득" },
+  {
+    date: "2023.11.25.",
+    title: (
+      <>
+        제5회 경북SWgo 해커톤{" "}
+        <span style={{ color: "var(--text-sub)", fontWeight: "600" }}>
+          최우수상
+        </span>{" "}
+        🥈
+      </>
+    ),
+  },
+  {
+    date: "2024.04.17.",
+    title: (
+      <>
+        <b>정보처리기능사</b> 취득
+      </>
+    ),
+  },
+  {
+    date: "2024.06.03.",
+    title: (
+      <>
+        2024학년도 SWgo 프로그래밍 챌린지{" "}
+        <span style={{ color: "var(--bronze)", fontWeight: "600" }}>동상</span>{" "}
+        🥉
+      </>
+    ),
+  },
+  {
+    date: "2023.06.19.",
+    title: (
+      <>
+        경소고 프로그래밍 챌린지 본선
+        <span style={{ color: "var(--gold)", fontWeight: "600" }}>
+          {" "}
+          금상
+        </span>{" "}
+        🥇
+      </>
+    ),
+  },
+  {
+    date: "2024.07.15.",
+    title: (
+      <>
+        교내 창업 아이디어 대회
+        <span style={{ color: "var(--gold)", fontWeight: "600" }}>
+          {" "}
+          금상
+        </span>{" "}
+        🥇
+      </>
+    ),
+  },
+  { date: "2024.07.18.", title: <>2024학년도 1학기 캡스톤 프로젝트 4등</> },
+  {
+    date: "2024.08.27.",
+    title: (
+      <>
+        Microsoft 해커그라운드 해커톤{" "}
+        <span style={{ color: "var(--bronze)", fontWeight: "600" }}>
+          장려상
+        </span>{" "}
+        🥉
+      </>
+    ),
+  },
+  {
+    date: "2024.11.25.",
+    title: <>2024학년도 2학기 학업성취도향상 장학금 수여</>,
+  },
+  {
+    date: "2024.12.24.",
+    title: (
+      <>
+        <b>정보처리산업기사</b> 취득
+      </>
+    ),
+  },
 ];
 
 const Activity = () => {
