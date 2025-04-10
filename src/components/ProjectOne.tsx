@@ -1,6 +1,6 @@
 import styles from "./styles/section.module.scss";
 import Goto from "../assets/image/Goto.svg";
-// import Link from "../assets/image/Link.svg";
+import Link from "../assets/image/Link.svg";
 import img1 from "../assets/pjone/img1.webp";
 import img2 from "../assets/pjone/img2.webp";
 import img3 from "../assets/pjone/img3.webp";
@@ -114,10 +114,14 @@ const ProjectOne = () => {
             <li>기획-디자인-구현 전 과정을 담당</li>
           </ul>
 
-          {/* <a href="/" className={styles.link} target="_blank">
+          <a
+            href="https://probable-tithonia-17b.notion.site/1d124b17aa56802fb5c7e7b596853f93?pvs=4"
+            className={styles.link}
+            target="_blank"
+          >
             <img src={Link} alt="" loading="lazy" />
             <aside>상세보기</aside>
-          </a> */}
+          </a>
 
           <div className={styles.scroll}>
             <div

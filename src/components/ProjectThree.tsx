@@ -1,6 +1,6 @@
 import styles from "./styles/section.module.scss";
 // import Goto from "../assets/image/Goto.svg";
-// import Link from "../assets/image/Link.svg";
+import Link from "../assets/image/Link.svg";
 import img1 from "../assets/pjthree/img1.webp";
 import img2 from "../assets/pjthree/img2.webp";
 import { useRef, useState } from "react";
@@ -102,10 +102,14 @@ const ProjectOne = () => {
             <li>모달 기반 로그인 UI에서 상태 분기 처리 및 에러 핸들링 구현</li>
           </ul>
 
-          {/* <a href="/" className={styles.link} target="_blank">
+          <a
+            href="https://probable-tithonia-17b.notion.site/AI-1d124b17aa5680a29b56ded28c7a9a7a?pvs=4"
+            className={styles.link}
+            target="_blank"
+          >
             <img src={Link} alt="" loading="lazy" />
             <aside>상세보기</aside>
-          </a> */}
+          </a>
 
           <div className={styles.scroll}>
             <div

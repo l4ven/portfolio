@@ -108,7 +108,7 @@ ul {
   font-size: 14px;
   &:hover {
     cursor: pointer;
-    background-color: #eee;
+    background-color: var(--link);
   }
 }
 
@@ -180,7 +180,7 @@ ul {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  background: #fff;
+  background: var(--background);
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 8px 16px;
@@ -196,7 +196,7 @@ ul {
   right: 24px;
   font-size: 14px;
   color: var(--text-sub);
-  background: #fff;
+  background: var(--background);
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 8px 16px;

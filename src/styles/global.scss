@@ -50,6 +50,19 @@
   --text-sub: #666;
   --border: #ccc;
   --modal: rgba(50, 50, 50, 0.3);
+  --link: #eee;
+}
+body.dark {
+  --background: #121212;
+  --text: #f1f1f1;
+  --text-sub: #999;
+  --border: #444;
+  --modal: rgba(0, 0, 0, 0.6);
+  --link: #222;
+}
+
+body.dark img.theme-invert {
+  filter: brightness(0) invert(1);
 }
 
 body {
