@@ -83,7 +83,7 @@ const ProjectOne = () => {
             {/* <a href="/" target="_blank"></a> */}
             {/* <img src={Goto} alt="" /> */}
           </div>
-          <h4>학교 내 Wee클래스 AI 채팅 심리 상담 서비스</h4>
+          <h3>학교 내 Wee클래스 AI 채팅 심리 상담 서비스</h3>
           <ul>
             <li>
               OpenAI GPT API를 활용해 학생의 감정에 맞는 대화형 상담 시나리오
@@ -107,7 +107,14 @@ const ProjectOne = () => {
             className={styles.link}
             target="_blank"
           >
-            <img src={Link} alt="" loading="lazy" />
+            <img
+              src={Link}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={14}
+              height={21}
+            />
             <aside>상세보기</aside>
           </a>
 
@@ -133,6 +140,9 @@ const ProjectOne = () => {
                     if (!isDragging) openModal(i);
                   }}
                   onMouseLeave={handleMouseLeave}
+                  decoding="async"
+                  height={90}
+                  width={"auto"}
                 />
               ))}
             </div>

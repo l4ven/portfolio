@@ -88,7 +88,7 @@ const ProjectOne = () => {
             {/* <a href="/" target="_blank"></a> */}
             {/* <img src={Goto} alt="" /> */}
           </div>
-          <h4>개발자 코드 조각 저장 및 검색 서비스</h4>
+          <h3>개발자 코드 조각 저장 및 검색 서비스</h3>
           <ul>
             <li>
               React + TypeScript + styled-components 기반 웹 서비스, App Router
@@ -113,7 +113,14 @@ const ProjectOne = () => {
             className={styles.link}
             target="_blank"
           >
-            <img src={Link} alt="" loading="lazy" />
+            <img
+              src={Link}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={14}
+              height={21}
+            />
             <aside>상세보기</aside>
           </a>
 
@@ -139,6 +146,9 @@ const ProjectOne = () => {
                     if (!isDragging) openModal(i);
                   }}
                   onMouseLeave={handleMouseLeave}
+                  decoding="async"
+                  height={90}
+                  width={"auto"}
                 />
               ))}
             </div>

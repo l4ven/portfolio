@@ -85,9 +85,17 @@ const ProjectOne = () => {
             <a href="https://ojc-project.vercel.app/" target="_blank">
               <h2>오점추</h2>
             </a>
-            <img src={Goto} alt="" loading="lazy" className="theme-invert" />
+            <img
+              src={Goto}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={12}
+              height={15}
+              className="theme-invert"
+            />
           </div>
-          <h4>위치 기반 메뉴 추천 및 전 세계 음식 레시피 검색 서비스</h4>
+          <h3>위치 기반 메뉴 추천 및 전 세계 음식 레시피 검색 서비스</h3>
           <ul>
             <li>
               React + Vite + TypeScript 기반 SPA, 인프라는 Vercel 정적 호스팅
@@ -119,7 +127,14 @@ const ProjectOne = () => {
             className={styles.link}
             target="_blank"
           >
-            <img src={Link} alt="" loading="lazy" />
+            <img
+              src={Link}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={14}
+              height={21}
+            />
             <aside>상세보기</aside>
           </a>
 
@@ -138,6 +153,9 @@ const ProjectOne = () => {
                   src={img}
                   alt={`프로젝트 이미지 ${i + 1}`}
                   loading="lazy"
+                  decoding="async"
+                  height={90}
+                  width={"auto"}
                   onMouseDown={handleMouseDown}
                   onMouseMove={handleMouseMove}
                   onMouseUp={() => {

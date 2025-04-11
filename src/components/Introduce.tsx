@@ -1,5 +1,26 @@
 import styles from "./styles/section.module.scss";
 
+export const translations = {
+  0: {
+    // 한국어
+    name: "강한",
+    job: "프론트엔드 엔지니어 / 디자인",
+    github: "깃허브",
+    email: "이메일",
+    language: "언어 설정",
+    theme: "테마 설정",
+  },
+  1: {
+    // 영어
+    name: "Han Kang",
+    job: "Frontend Engineer / Design",
+    github: "GitHub",
+    email: "Email",
+    language: "Language",
+    theme: "Theme",
+  },
+};
+
 const Introduce = () => {
   return (
     <section className={styles.container}>

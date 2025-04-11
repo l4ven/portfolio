@@ -28,7 +28,15 @@ const Contact = () => {
         <div className={styles.contact}>
           <a href="https://github.com/L4VEN" target="_blank">
             <aside>L4VEN</aside>
-            <img src={Goto} alt="" loading="lazy" className="theme-invert" />
+            <img
+              src={Goto}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={12}
+              height={15}
+              className="theme-invert"
+            />
           </a>
         </div>
       </div>
@@ -39,7 +47,15 @@ const Contact = () => {
         <div className={styles.contact}>
           <a href="https://www.instagram.com/laven_dev/" target="_blank">
             <aside>laven_dev</aside>
-            <img src={Goto} alt="" loading="lazy" className="theme-invert" />
+            <img
+              src={Goto}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              width={12}
+              height={15}
+              className="theme-invert"
+            />
           </a>
         </div>
       </div>
