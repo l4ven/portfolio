@@ -1,31 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/image/profile.webp" />
-    <link rel="preload" href="/image/profile.webp" as="image" />
 
-    <!-- <link
-      rel="preload"
-      href="/font/Pretendard-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/font/Pretendard-SemiBold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/font/Pretendard-Bold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    /> -->
+    <script>
+      const theme =
+        localStorage.getItem("theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light");
+      document.documentElement.className = theme;
+    </script>
+
+    <style>
+      html.light {
+        --background: #ffffff;
+        --text: #000000;
+        --text-sub: #5a5a5a;
+        --border: #ccc;
+        --modal: rgba(50, 50, 50, 0.3);
+        --link: #eee;
+        --gold: #a87400;
+        --bronze: #8c4e37;
+      }
+
+      html.dark {
+        --background: #121212;
+        --text: #f1f1f1;
+        --text-sub: #aaaaaa;
+        --border: #444;
+        --modal: rgba(0, 0, 0, 0.6);
+        --link: #222;
+        --gold: #ffd24d;
+        --bronze: #d69b80;
+      }
+    </style>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"

@@ -33,6 +33,7 @@
 }
 
 :root {
+  background-color: #fff;
   --background: #fff;
   --text: #000;
   --text-sub: #666;
@@ -41,6 +42,9 @@
   --link: #eee;
   --gold: #c18400;
   --bronze: #8c4e37;
+}
+html.dark {
+  background-color: #121212;
 }
 body.dark {
   --background: #121212;
@@ -53,7 +57,7 @@ body.dark {
   --bronze: #d69b80;
 }
 
-body.dark img.theme-invert {
+html.dark img.theme-invert {
   filter: brightness(0) invert(1);
 }
 
