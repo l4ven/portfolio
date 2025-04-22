@@ -109,7 +109,7 @@ const ProjectOne = () => {
           </ul>
 
           <a
-            href="https://probable-tithonia-17b.notion.site/ClipIt-1d024b17aa56807fae80fb83e395cd40?pvs=4"
+            href="https://probable-tithonia-17b.notion.site/ClipIt-17024b17aa5680ad843fe651da5fb6ef?pvs=4"
             className={styles.link}
             target="_blank"
           >
