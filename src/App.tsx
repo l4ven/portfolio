@@ -22,14 +22,14 @@ function App() {
       <Introduce />
       <Contact />
       <Skill />
+      <Activity />
+      <School />
       <Certificate />
       {/* <Suspense fallback={<h2>프로젝트</h2>}> */}
       <ProjectTwo />
       <ProjectOne />
       <ProjectThree />
       {/* </Suspense> */}
-      <Activity />
-      <School />
     </div>
   );
 }
