@@ -43,7 +43,7 @@ const Profile = () => {
         />
         <article className={styles.article}>
           <h1>강한</h1>
-          <p>프론트엔드 엔지니어 / 디자인</p>
+          <p>UI/UX 디자인 & 웹 프론트엔드</p>
           <nav className={styles.nav}>
             <div className={styles.logo}>
               <img

@@ -10,8 +10,8 @@ const Skill = () => {
         </aside>
         <aside className={styles.right}>
           <aside>
-            React, TypeScript, Redux Toolkit, HTML5, CSS3, JS (ES6), Styled
-            Components, SCSS, Tailwind CSS
+            React, TypeScript, Redux Toolkit, HTML5, CSS3, JS (ES6), Tailwind
+            CSS, Styled Components, SCSS
           </aside>
         </aside>
       </div>

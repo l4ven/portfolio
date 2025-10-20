@@ -1,4 +1,5 @@
 import styles from "./styles/section.module.scss";
+import GotoIcon from "../assets/image/Goto.svg";
 
 export const translations = {
   0: {
@@ -26,7 +27,7 @@ const Introduce = () => {
     <section className={styles.container}>
       <h2>소개</h2>
       <aside>
-        안녕하세요! <b>경북소프트웨어마이스터고</b>를 재학 중인 <b>강한</b>
+        안녕하세요! <b>경북소프트웨어마이스터고</b>를 졸업 예정인 <b>강한</b>
         입니다.
         <ul>
           <li>
@@ -34,8 +35,24 @@ const Introduce = () => {
             지향합니다.
           </li>
           <li>
-            <b>KRDS 디자인 가이드</b>를 철저히 준수하며, 정제된 UI와 사용자
-            흐름에 집중합니다.
+            <b>
+              <a
+                href="https://www.krds.go.kr/html/site/index.html"
+                target="blank"
+              >
+                KRDS 디자인 가이드
+                <img
+                  src={GotoIcon}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  width={16}
+                  height={15}
+                  className="theme-invert"
+                />
+              </a>
+            </b>
+            를 철저히 준수하며, 정제된 UI와 사용자 흐름에 집중합니다.
           </li>
           <li>
             작은 디테일까지 챙기는 태도는 결국 사용자에게 전해진다고 믿습니다.
