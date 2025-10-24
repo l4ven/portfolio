@@ -20,7 +20,7 @@ const Skill = () => {
           <p>디자인 및 협업 툴</p>
         </aside>
         <aside className={styles.right}>
-          <aside>Figma, Zeplin, Slack, Notion, Git, Dooray</aside>
+          <aside>Figma, Zeplin, Slack, Notion, Git, Dooray&nbsp;</aside>
         </aside>
       </div>
     </section>
