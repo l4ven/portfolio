@@ -4,13 +4,10 @@ import Github from "../assets/image/Github.svg";
 import Email from "../assets/image/Email.svg";
 import Light from "../assets/image/Sunny.svg";
 import Dark from "../assets/image/Moon.svg";
-// import Language from "../assets/image/Language.svg";
 import { useTheme } from "../contexts/ThemeContext";
-// import { useLanguage } from "../contexts/LanguageContext";
 import { useEffect, useRef, useState } from "react";
 
 const Profile = () => {
-  // const { language, setLanguage } = useLanguage();
   const [open, setOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -25,7 +22,6 @@ const Profile = () => {
         setOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [open]);
@@ -72,48 +68,22 @@ const Profile = () => {
           </nav>
         </article>
       </main>
-      <div className={styles.right}>
-        {/* <div className={styles.dropdownWrapper} ref={dropdownRef}>
-          <img
-            src={Language}
-            alt="언어 설정"
-            loading="lazy"
-            className="theme-invert"
-            onClick={() => setOpen((prev) => !prev)}
-            style={{ cursor: "pointer" }}
-          />
-          {open && (
-            <ul className={styles.dropdown}>
-              <li
-                onClick={() => {
-                  setLanguage(0);
-                  setOpen(false);
-                }}
-              >
-                <span>한국어</span> <span>{language === 0 && "✓"}</span>
-              </li>
-              <li
-                onClick={() => {
-                  setLanguage(1);
-                  setOpen(false);
-                }}
-              >
-                <span>English</span> <span>{language === 1 && "✓"}</span>
-              </li>
-            </ul>
-          )}
-        </div> */}
 
-        <img
-          src={theme === "light" ? Light : Dark}
-          alt="테마 설정"
-          className="theme-invert"
-          onClick={toggleTheme}
-          style={{ cursor: "pointer" }}
-          decoding="async"
-          width={24}
-          height={24}
-        />
+      <div className={styles.right}>
+        <div className={styles.themeBtn} onClick={toggleTheme}>
+          <img
+            src={theme === "light" ? Light : Dark}
+            alt="테마 설정"
+            className={`${"theme-invert"} ${styles.themeToggle} ${
+              theme === "light"
+                ? styles.themeToggleLight
+                : styles.themeToggleDark
+            }`}
+            decoding="async"
+            width={20}
+            height={20}
+          />
+        </div>
       </div>
     </section>
   );

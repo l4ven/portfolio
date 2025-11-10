@@ -68,14 +68,32 @@
     justify-content: flex-end;
     gap: 12px;
     position: relative;
+    .themeBtn {
+      border-radius: 999px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      transition: transform 0.2s ease-out;
+      &:hover {
+        background-color: var(--link);
+        cursor: pointer;
+      }
+    }
     img {
       width: 20px;
       height: 20px;
-      transition: transform 0.2s ease-out;
-      &:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-      }
+    }
+    .themeToggleLight {
+      transition: transform 0.3s;
+      transform: rotate(180deg);
+    }
+    .themeToggleDark {
+      transition: transform 0.3s;
+      transform: rotate(0deg);
     }
   }
 }
@@ -96,10 +114,6 @@
         width: 16px;
         height: 16px;
         transition: transform 0.2s ease-out;
-        &:hover {
-          transform: scale(1.1);
-          cursor: pointer;
-        }
       }
     }
   }
