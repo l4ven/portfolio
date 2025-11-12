@@ -70,7 +70,19 @@ const Profile = () => {
       </main>
 
       <div className={styles.right}>
-        <div className={styles.themeBtn} onClick={toggleTheme}>
+        <div
+          className={styles.themeBtn}
+          onClick={toggleTheme}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              toggleTheme();
+            }
+          }}
+          tabIndex={0}
+          role="button"
+          aria-label="테마 전환"
+        >
           <img
             src={theme === "light" ? Light : Dark}
             alt="테마 설정"

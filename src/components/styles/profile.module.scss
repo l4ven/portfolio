@@ -86,6 +86,14 @@
     img {
       width: 20px;
       height: 20px;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+      -moz-user-drag: none;
+      -o-user-drag: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-use-select: none;
+      user-select: none;
     }
     .themeToggleLight {
       transition: transform 0.3s;

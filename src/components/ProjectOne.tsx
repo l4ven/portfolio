@@ -146,6 +146,7 @@ const ProjectOne = () => {
               onMouseLeave={handleMouseLeave}
               onMouseUp={handleMouseUp}
               onMouseMove={handleMouseMove}
+              tabIndex={-1}
             >
               {images.map((img, i) => (
                 <img
